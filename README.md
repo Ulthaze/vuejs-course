@@ -1,11 +1,11 @@
 # vuejs-course
 VueJS Course
 
-## Section 1
+## [Section 1](/section_1/index.html)
 
 Course introduction: event bindings and interpolation
 
-## Section 2
+## [Section 2](/section_2/index.html)
 
 Overview of the four main Vue app elements:
 ```
@@ -29,10 +29,10 @@ as well as going over some of the underlying elements of reactivity within the V
 - 4: Dynamic Stylings
 ```
 
-## Section 3
+## [Section 3](/section_3/index.html)
 
 A short section covering `v-if, v-else` Vue directives to enable conditional, reactive and dynamically styled applications
 
-## Section 4
+## [Section 4](/section_4/index.html)
 
 The first major application: Monster Slayer. The specification are two health bars, four buttons: 'attack, special, heal, surrender', and a battle log. Upon depletion of a healthbar, a trigger state will display either 'Victory or Defeat'
