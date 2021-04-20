@@ -36,3 +36,22 @@ A short section covering `v-if, v-else` Vue directives to enable conditional, re
 ## [Section 4](/section_4/index.html)
 
 The first major application: Monster Slayer. The specification are two health bars, four buttons: 'attack, special, heal, surrender', and a battle log. Upon depletion of a healthbar, a trigger state will display either 'Victory or Defeat'
+
+## Section 5
+
+How Vue works and JS comparisons, covering Vue Templates and Refs. Further information on the Vue lifecyle and where one can run code when needed:
+```
+- createApp
+- beforeCreate(): Initalises the Vue App
+- created(): This step compiles the template
+- beforeMount(): Initalised and constructed virtual DOM ready to mount
+- mounted(): This mounts the instance in the browser
+
+-- data changes
+--- beforeUpdate(): Processes any updates to data 
+--- updated(): Passes the updated information through to the DOM
+
+-- Instance Unmounted
+--- beforeUnmount(): Triggers logic before unmounting the Vue App
+--- unmounted(): Runs logic on a successful unmount condition
+

@@ -17,11 +17,17 @@
 `v-model="item"`
     Combination of `v-bind` and `v-on` that binds a Vue data property and watches for changes 
 
+`v-for="item in items"`
+    Iterates through a data array to provide interpolateable items. Default attributes for `item` are `key, value, index`
+
 `v-if="logic"`
     Renders the HTML element if based on the logic return via either data property or methods. Must be true or false
 
 `v-else`
     Must come after a v-if statement, and will function as the typical JS if, else if, else logic 
+
+`ref="item"`
+    Uses `item` to provide JS side references called by `this.$refs.item` to point to a specific DOM element
 
 
 ## JS Ref
@@ -29,8 +35,8 @@
 `Vue.createApp({})`
     Creation of the Vue Application, requires mounting onto a target location
 
-`.mount('#location')`
-    Calls the Vue application and mounts it on the target location via HTML id tag 
+`.mount('#location'), .unmount('#location)`
+    Calls the Vue application and mounts it on the target location via HTML id tag, and unmounting
 
 `data () { return {} },` 
     The Vue Data blocks, containing all the data properties to be used in the Vue App
@@ -46,3 +52,13 @@
 
 `_array_.unshift(item)`
     Adds `item` to the start of the selected array
+
+`template: `
+    An object to pass through HTML templates to the DOM
+
+`this.$refs._item_`
+    Refers to a specifc DOM element with key `item` 
+
+`beforeCreate(), created (), beforeMount(), mounted(), beforeUpdate(), updated(), beforeUnmount (), unmounted ()`
+    Inserts code in that particular phase of the Vue lifecycle
+
