@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Section 2</title>
+        <script src="https://unpkg.com/vue@next"></script>
+        <link rel="stylesheet" href="styles.css" />
+    
+    </head>
+    <body>
+        <header>
+            <h1>Section 2</h1>
+        </header>
+        <section id="testSection">
+            <h2>My Messages</h2>
+            <p v-html="selectMessage()">
+            </p>
+            <p>
+                {{ selectMessage() }}
+            </p>
+            <p>
+                More Messages <a v-bind:href="link">here</a>
+            </p>
+        </section>
+        <section id="events">
+            <h2>
+                Events
+            </h2>
+            <button @click="increaseCounter(5)">Add</button>
+            <button @click.right.prevent="decreaseCounter(5)">Remove</button>
+            <p v-once>
+                Initial State: {{ counter }}
+            </p>
+            <p>
+                Result: {{ counter }}
+            </p>
+            <input 
+              type="text"
+              v-model="name"
+            />
+            <input 
+              type="text"
+              v-model="lastName"
+            />
+            <button @click="resetInput">Reset Input</button>
+            <p>
+                Your Name: {{ fullname }}
+            </p>
+        </section>
+        <section id="styles">
+            <div 
+                class="demo"
+                :class="boxAClasses"
+                @click="boxSelected('A')"
+            >
+
+            </div>
+            <div 
+                :class="boxB ? 'demo active' : 'demo'" 
+                @click="boxSelected('B')"
+            >
+
+            </div>
+            <div 
+                :class="['demo', {active: boxC}]" 
+                @click="boxSelected('C')"
+            >
+            </div>
+        </section>
+    </body>
+    <script src="vueapp.js"></script>
+</html>
