@@ -56,6 +56,16 @@ How Vue works and JS comparisons, covering Vue Templates and Refs. Further infor
 --- unmounted(): Runs logic on a successful unmount condition
 ```
 
-## Section 6
+## [Section 6] (/section_6/index.html)
 
 Components to compartmentalise interactivity to HTML templates with data and logic, that can be encapsulated and reused. All the logic within remains standalone within that component, useful for list item interactivity for example.
+
+## Section 7
+
+Introduction to the Vue CLI, moving from single page applications to the multiple page application environment through the CLI and development servers. Vue CLI requires NodeJS/npm
+
+### Dependancies
+
+NodeJS - v16.0.0
+@vue/cli - 4.5.12
+

@@ -68,3 +68,14 @@
 `beforeCreate(), created (), beforeMount(), mounted(), beforeUpdate(), updated(), beforeUnmount (), unmounted ()`
     Inserts code in that particular phase of the Vue lifecycle
 
+
+## CLI Commands
+
+`vue create %name%`
+    Creation of a project environment in a folder within the current folder. Default templates are enabled.
+
+`npm run server`
+    Runs the webserver and enables the CLI debugging tools
+
+`npm run build`
+    Builds the project and outputs the consolidates files
