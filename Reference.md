@@ -29,14 +29,20 @@
 `ref="item"`
     Uses `item` to provide JS side references called by `this.$refs.item` to point to a specific DOM element
 
+`<component-name></component-name>`
+    Refers to the component created in the Vue application
+
 
 ## JS Ref
 
 `Vue.createApp({})`
     Creation of the Vue Application, requires mounting onto a target location
 
-`.mount('#location'), .unmount('#location)`
+`.mount('#location'), .unmount('#location')`
     Calls the Vue application and mounts it on the target location via HTML id tag, and unmounting
+
+`###.component('itemID-component', {VueApp});`
+    Creates a component on the create vue app, syntax is a multiwork identifier. Contains a the standard Vue data, methods & template properties
 
 `data () { return {} },` 
     The Vue Data blocks, containing all the data properties to be used in the Vue App

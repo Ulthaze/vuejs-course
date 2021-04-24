@@ -54,4 +54,8 @@ How Vue works and JS comparisons, covering Vue Templates and Refs. Further infor
 -- Instance Unmounted
 --- beforeUnmount(): Triggers logic before unmounting the Vue App
 --- unmounted(): Runs logic on a successful unmount condition
+```
 
+## Section 6
+
+Components to compartmentalise interactivity to HTML templates with data and logic, that can be encapsulated and reused. All the logic within remains standalone within that component, useful for list item interactivity for example.
