@@ -64,6 +64,10 @@ Components to compartmentalise interactivity to HTML templates with data and log
 
 Introduction to the Vue CLI, moving from single page applications to the multiple page application environment through the CLI and development servers. Vue CLI requires NodeJS/npm
 
+## Section 8
+
+Learning how Vue handles props and data pass through. Props can not be changed within the component and returned, changes are local. A props can be converted into a component data property, this is not advised.
+
 ### Dependancies
 
 NodeJS - v16.0.0

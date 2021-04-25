@@ -32,6 +32,8 @@
 `<component-name></component-name>`
     Refers to the component created in the Vue application
 
+`<component thing-name="">`
+    Allows data to be transferred to component via props, HTML pass should be hypened, Vue props should be camel case. Requires `v-bind` to pass through non-string values.
 
 ## JS Ref
 
@@ -68,6 +70,27 @@
 `beforeCreate(), created (), beforeMount(), mounted(), beforeUpdate(), updated(), beforeUnmount (), unmounted ()`
     Inserts code in that particular phase of the Vue lifecycle
 
+`props:{}`
+    Creates the props block of an application. If the data is a Javascript object of key value pairs, you can use v-bind="item" to pass through instead, Vue will automatically intepolate the pairs.
+
+```
+props:{
+    item: {
+        type: String,
+        required: true,
+        default: '0',
+        validator: function(value){
+            return logic
+        }
+    }
+}
+```
+
+`this.$emit('name')`
+    Emits the component that is called via name
+
+`emits: { key: function()},`
+    Part of the component constructors used to list the emitted items within the components. Can contain validation logic.
 
 ## CLI Commands
 
