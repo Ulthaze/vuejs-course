@@ -32,7 +32,7 @@
 `<component-name></component-name>`
     Refers to the component created in the Vue application
 
-`<component thing-name="">`
+`<component thing-name="methodFunction/data">`
     Allows data to be transferred to component via props, HTML pass should be hypened, Vue props should be camel case. Requires `v-bind` to pass through non-string values.
 
 ## JS Ref
@@ -97,7 +97,7 @@ props:{
 `vue create %name%`
     Creation of a project environment in a folder within the current folder. Default templates are enabled.
 
-`npm run server`
+`npm run serve`
     Runs the webserver and enables the CLI debugging tools
 
 `npm run build`
