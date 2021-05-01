@@ -68,6 +68,10 @@ Introduction to the Vue CLI, moving from single page applications to the multipl
 
 Learning how Vue handles props and data pass through. Props can not be changed within the component and returned, changes are local. A props can be converted into a component data property, this is not advised. Use of the `$emit` functionality to bind a parent function into the child application to allow upwards data propogration
 
+## Section 9
+
+More on components, global v local registration and scoping styles to local components. Local registration is the prefered way forward, unless it's a heavily reused component. Introduction to slots, components that apply special cases to the DOM `Teleport, KeepAlive`, the Vue Style guide and folder structure considerations.
+
 ### Dependancies
 
 NodeJS - v16.0.0

@@ -29,11 +29,24 @@
 `ref="item"`
     Uses `item` to provide JS side references called by `this.$refs.item` to point to a specific DOM element
 
-`<component-name></component-name>`
+`<component-name></component-name>` or `<ComponentName />`
     Refers to the component created in the Vue application
 
 `<component thing-name="methodFunction/data">`
     Allows data to be transferred to component via props, HTML pass should be hypened, Vue props should be camel case. Requires `v-bind` to pass through non-string values.
+
+`<slot name="ref">`
+    Allows content to be injected via the components, to apply style etc. Any content between the slot tags will be passed through as default data unless replaced.
+
+`v-slot:_slot reference_` or `#default, #_slot_ref_`
+    Allows multi-slot references to be passed through. use of `$slots.reference` can be used in logic to remove/display sections.
+
+`<KeepAlive>`
+    Keeps dyanmic components alive, retaining data on shift
+
+`<Teleport to"id">`
+    Teleports the bounded html to the target location in the DOM
+
 
 ## JS Ref
 
@@ -98,6 +111,9 @@ props:{
 `inject: ['key']`
     Pulls provided data from parent components
 
+`<style scoped>`
+    Locks the styling of the component to local defined style block, no inheritance on previous defined styles.
+
 ## CLI Commands
 
 `vue create %name%`
@@ -108,3 +124,7 @@ props:{
 
 `npm run build`
     Builds the project and outputs the consolidates files
+
+## Official VUE Style Guide
+    
+    Vue.js has a style guide for naming conventions 
