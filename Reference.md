@@ -92,6 +92,12 @@ props:{
 `emits: { key: function()},`
     Part of the component constructors used to list the emitted items within the components. Can contain validation logic.
 
+`provide() {}`
+    Makes available an object to all children
+
+`inject: ['key']`
+    Pulls provided data from parent components
+
 ## CLI Commands
 
 `vue create %name%`

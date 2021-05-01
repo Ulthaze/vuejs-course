@@ -66,7 +66,7 @@ Introduction to the Vue CLI, moving from single page applications to the multipl
 
 ## Section 8
 
-Learning how Vue handles props and data pass through. Props can not be changed within the component and returned, changes are local. A props can be converted into a component data property, this is not advised.
+Learning how Vue handles props and data pass through. Props can not be changed within the component and returned, changes are local. A props can be converted into a component data property, this is not advised. Use of the `$emit` functionality to bind a parent function into the child application to allow upwards data propogration
 
 ### Dependancies
 
