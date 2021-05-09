@@ -72,6 +72,14 @@ Learning how Vue handles props and data pass through. Props can not be changed w
 
 More on components, global v local registration and scoping styles to local components. Local registration is the prefered way forward, unless it's a heavily reused component. Introduction to slots, components that apply special cases to the DOM `Teleport, KeepAlive`, the Vue Style guide and folder structure considerations.
 
+## Section 10
+
+Course project
+
+## Section 11
+
+Forms
+
 ### Dependancies
 
 NodeJS - v16.0.0
