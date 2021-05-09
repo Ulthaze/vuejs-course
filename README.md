@@ -78,7 +78,10 @@ Course project
 
 ## Section 11
 
-Forms
+Forms, going over previous iterations of how to handle forms using `v-model` and `@submit` handlers. Take care with input `type` restrictions, `v-model` will fetch the data type specified by `type` whereas `ref` will always stringify the values. `lazy and trim` suffix to `v-model` will alter properties, lazy will cause a trigger after an event, instead of each input whilst trim retains the standard JS functionality. 
+For a `select` form, it is best practice to default data to one of the options, called through standard `ref` and `v-model` functions. 
+Checkboxes and radios, add `v-model` and `value` tags onto each input. For multiple checkboxes, the data property must be an array to maintain traditional functionality. Single checkboxes will return `true` or `false`.
+When creating your own sub-components `v-model` will work if you declare the prop `modelValue` and emit `update:modelValue` in the custom sub-component. Setting the data property to `modelValue` retains any styling/visual feedbacks in the system.
 
 ### Dependancies
 
